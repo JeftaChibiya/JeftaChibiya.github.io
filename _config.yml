@@ -1,3 +1,29 @@
+layout: page
+title: "About me"
+permalink: /profile
+
+
+title: A Software Developer profile with Github Pages and Jekyll
+email: j3f74@githubpages.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A Software Developer profile with Github Pages and Jekyll. Created 09/04/2022
+remote_theme: samarsault/plainwhite-jekyll
+
+domain: jeftachibiya.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://jeftachibiya.github.io/  # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: /JeftaChibiya.github.io/      # place folder name if the site is served in a subfolder
+
+twitter_username: j3f7a_gh
+github_username:  j3f74
+
+# Build settings
+theme: plainwhite
+plugins:
+  - jekyll-feed
+
+
+
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -17,25 +43,6 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
-title: A Software Developer profile with Github Pages and Jekyll
-email: j3f74@githubpages.com
-description: >- # this means to ignore newlines until "baseurl:"
-  A Software Developer profile with Github Pages and Jekyll. Created 09/04/2022
-  
-domain: jeftachibiya.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://jeftachibiya.github.io/  # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: /JeftaChibiya.github.io/      # place folder name if the site is served in a subfolder
-
-twitter_username: j3f7a_gh
-github_username:  j3f74
-
-remote_theme: samarsault/plainwhite-jekyll
-
-# Build settings
-theme: plainwhite
-plugins:
-  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
