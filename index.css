@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    color: rgb(239, 235, 235);
+    background-color: rgb(221, 224, 228);
+    font-size: 1.3em;
+    font-family: 'Anek Tamil',sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* utility classes */
+.link{
+    outline: none;
+    text-decoration: none;
+    color: rgb(70, 67, 67);
+}
+.vertical-divide {
+    border-left: 2px dashed rgb(194, 190, 190);
+    height: 100%;
+    width: 0;
+}
+.theme-color-lighter-grey{
+    color: rgb(217, 212, 212);
+}
+.theme-color-light-grey {
+    color: rgb(189, 186, 186);
+}
+.theme-color-md-grey {
+    color: rgb(181, 174, 174);
+}
+.theme-color-dark-grey {
+    color: rgb(64, 61, 61);
+}
+.theme-font-md{
+    font-size: 1.4rem;
+}
+.theme-font-sm {
+    font-size: 1.2rem;
+}
+.theme-font-lower-md {
+    font-size: 1.6rem;
+}
+.theme-font-bold{
+    font-weight: bold;
+}
+.theme-padding-y{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.theme-margin-top {
+    margin-top: 10%;
+}
+.theme-margin-x {
+    margin: 0 auto;
+}
+.theme-height{
+    height: 100vh;
+}
+.theme-half-height {
+    height: 60vh;
+}
+.margin-bottom-less{
+    margin-bottom: 1px;
+}
+.centered {
+    text-align: center;
+}
+.position-relative{
+    position: relative
+}
+.position-bottom{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: 0;
+    margin:auto;
+}
+.space-above{
+    padding-top: 3%
+}
+.bg-dna{
+    background-color: #233355;
+    background-image: url('/assets/images/dna.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+.bg-light-grey{
+  background-color: rgb(248, 248, 248);
+}
+.flex-flow-row-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex-flow-column-first {
+    width: 45%;
+}
+.flex-flow-column-second {
+    width: 45%;
+    height: 45%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-blend-mode: multiply;
+    background-color: rgb(206, 224, 244);
+    background-image: url('/assets/images/img.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px sold white
+}
+.flex-flow-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+.flex-flow-column-parent {
+    margin-top: 10%;
+}
+.flex-flow-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 16px;
+    color: rgb(102, 101, 101);
+    height: 0
+}
+.justify-content-center{
+    justify-content: center;
+}
+.theme-margin-y {
+    margin-bottom: 10%;
+}
+.flex-gap-between {
+    display: flex;
+    justify-content: space-between;
+}
+.grid-column{
+    display: grid;
+    grid-template: 35px 35px / auto;
+    row-gap: 3%;
+}
+.grid-template-parent{
+    display: grid;
+    grid-template: auto / repeat(3, auto);
+    column-gap: 3%;
+    align-items: center;    
+    width: 100%;
+    height: 50px;
+    margin-top: 8%;
+    border: 1px solid rgb(211, 207, 207);
+}
+.narrow-wide {
+    width: 60%;
+    height: 95%;
+    margin: 0 auto;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.second-nav-part {
+    color: rgb(244, 232, 232);
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    font-size: 1.3em;
+}
+.align-top {
+    margin-bottom: 20%;
+}
+.show{
+    display: none;
+}
+
+/* apply the styles below if device has a screen & minimum height of 680px and in portrait mode */
+@media screen and (max-width: 900px) {
+    .narrow-wide {
+        width: 90%;
+    }
+    .flex-flow-column-second {
+        width: 60%;
+        height: 60%;
+    }
+    .hide {
+        display: none;
+    }
+    .show{
+        display: block;
+        width: 100%;
+    }
+    .grid-column{
+        width: 80%;
+        justify-content: center;
+    }
+    .grid-template-parent{
+        grid-template: repeat(2, auto) / auto;
+        row-gap: 50px;
+        height: auto;
+        border: none;
+    }
+}
